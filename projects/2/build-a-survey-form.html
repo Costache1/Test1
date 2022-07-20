@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <h1 id="title">
+    Registration Form
+     <link rel="stylesheet" type="text/css" href="styles.css" />
+     </h1>
+  </head>
+  <body>
+    <p id="description">Here you cand register with us.</p>
+    <form id="survey-form">
+    <fieldset>
+    <label id="name-label" for="name">Name <input id="name" type="text" name="first-name" placeholder="John" required /></label>
+    <label id="email-label" for="email">Email <input id="email" type="email" name="email" placeholder="you@yourprovider.com" required /></label>
+    <label id="number-label" for="age">Age <input id="number" type="number" name="age" min="13" max="100" placeholder="21" required /></label>
+    <p>Where are you now</p>
+    <select id="dropdown" name="roll" class="form-control" required="2">
+      <option disabled="" selected="" value="">Select current role</option> ==$0
+      <option value="student">Student</option>
+      <option value="master">Master</option>
+      <option value="other">Other</option>
+    </select>
+    </fieldset>
+    <p>What do you want from us?</p>
+    <fieldset>
+        <label><input type="radio" name="account-type" class="inline" value="1" />Learning</label>
+        <label><input type="radio" name="account-type" class="inline" value="2" />Mastering Skills</label>
+        <label>
+     </fieldset>
+     <p>What do you like to do?</p>
+          <input type="checkbox" name="learn" value="fast" class="inline" required />Learn fast</label>
+          <input type="checkbox" name="learn" value="slow" class="inline" required />Learn slow</label>
+          <label>Tell us about you:
+            <textarea name="bio" row="3" cols="250" placeholder="I like to..."></textarea>
+            </label>
+      </fieldset>
+<input id="submit" type="submit" value="submit" />
+    </form>
+  </body>
+</html>
