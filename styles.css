@@ -129,14 +129,15 @@ a.contact-details:hover{
     font-size: 2rem;
     padding: 2rem 0.5rem;
 }
-
 .footer{
     background-color: gray;
     border:0.8px solid salmon;
     display:flex; 
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
     z-index:10;
     justify-content: center;
-    position:inherit;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.5rem; 
     width:100%;
