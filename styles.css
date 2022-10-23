@@ -1,14 +1,26 @@
 /* Please feel free to comment on this so i can learn! Thank you!!!*/
+:root{
+    /* Hier come new colors */
+    --color1: #12b4b6;
+    --color2: #2ebec6;
+    --color3: #008ca2;
+    --color4: #39d7f3;
+    --color5: #ff8281;
+    --color6: #e9edfc;
+    --color7: #bcd4f1;
+    --color8: #e3e3e3;
+    --color9: #b3b3b3;
+}
 #navbar{
-    background-color: gray;
-    border:0.8px solid salmon;
+    background-color: transparent;
+    border: 0.8px solid transparent;
     display: flex; 
     justify-content: flex-end;
-    z-index:10;
+    z-index: 10;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.5rem; 
-    position:fixed;
-    width:100%;
+    position: fixed;
+    width: 100%;
 }
 nav > ul {
     display: flex;
@@ -18,73 +30,91 @@ ul{
     list-style: none;
 }
 .nav-list{
-    display:flex;
+    display: flex;
 }
 a{
-    text-decoration:none;
-    color:salmon
+    text-decoration: none;
+    color: var(--color5)
 }
 .nav-list a {
     display: block;
     font-size: 1.4rem;
     padding: 1.3rem;
+    transition: transform 0.3s ease-out;
   }
-  
-  .nav-list a:hover {
-    background: blueviolet
+a:hover {
+}
+.nav-list a:hover {
+    background: transparent;
+    transform: translateY(8px);
   }
-  * {
-    margin:0;
-    padding:0;
-  }
+* {
+    margin: 0;
+    padding: 0;
+}
 h1{
-    color:rgba(255, 70, 70, 0.932);
+    color: var(--color5);
     font-size: 40px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: transform 0.5s ease-out;
+}
+h1:hover{
+    transform: translateX(-50px);
 }
 .description{
-    color:blueviolet;
-    font-size:30px;
-    text-align:center;
+    color: var(--color1);
+    font-size: 30px;
+    text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: transform 0.3s ease-out;
+}
+.description:hover{
+    transform: translateX(50px);
 }
 .welcome-section{
-    background-color:rgb(54, 54, 54);
-    display:flex;
-    padding-top:20%;
-    padding-bottom:20%;
+    background-image: linear-gradient(180deg,var(--color8), var(--color9));
+    display: flex;
+    padding-top: 10%;
+    padding-bottom: 10%;
     justify-content: center; 
 }
 h2{
-    color:rgba(255, 70, 70, 0.932);
+    color: var(--color5);
     font-size: 40px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight:lighter ;
+    font-weight: lighter ;
 }
 .second-section{
-    background-color:rgb(54, 54, 54);
-    display:flex;
-    padding-top:none;
-    padding-bottom:none;
+    background-image: linear-gradient(360deg,var(--color8), var(--color9));
+    display: flex;
+    padding-top: none;
+    padding-bottom: none;
     justify-content: center; 
 }
 h3{
-    color:rgba(255, 70, 70, 0.932);
+    color: var(--color5);
     font-size: 40px;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .third-section{
-    background-color:rgb(54, 54, 54);
-    display:flex;
-    padding-top:none;
-    padding-bottom:20%;
+    background-image: linear-gradient(180deg,var(--color8), var(--color9));
+    display: flex;
+    padding-top: none;
+    padding-bottom: 1px;
+    justify-content: center;
+}
+.fourth-section{
+    background-image: linear-gradient(360deg,var(--color8), var(--color9));
+    display: flex;
+    padding-top: none;
+    padding-bottom: 1px;
     justify-content: center;
 }
 .projects-grid{
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(2, minmax(320px, 1fr));
     grid-gap: 2rem;
     width: 100%;
@@ -92,16 +122,17 @@ h3{
     margin: 0 auto;
     margin-bottom: 6rem;
 }
+/* animate grid */
 .project-image1, .project-image4 {
-    width:380px;
-    height:420px;
+    width: 380px;
+    height: 420px;
 }
 .project-image2, .project-image3{
-    width:500px;
-    height:420px;
+    width: 500px;
+    height: 420px;
 }
 .contact-links{
-    display:flex;
+    display: flex;
     justify-content: center;
     justify-content: space-evenly;
     margin-top: 4rem;
@@ -117,31 +148,71 @@ h3{
     transform: translateY(8px);
   }
 a.contact-details {
-    color:blueviolet
+    color: var(--color1);
 }
 a.contact-details:hover{
-    color:salmon
+    color: var(--color5);
 }
 .project-title:hover {
-    color: blueviolet;
+    color: var(--color1);
   }
 .project-title {
     font-size: 2rem;
     padding: 2rem 0.5rem;
 }
 .footer{
-    background-color: gray;
-    border:0.8px solid salmon;
-    display:flex; 
+    color: var(--color1);
+    background-color: var(--color8);
+    border: 0.8px solid transparent;    
+    display: flex; 
     position: -webkit-sticky;
     position: sticky;
     bottom: 0;
-    z-index:10;
+    z-index: 10;
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.5rem; 
-    width:100%;
+    width: 100%;
 }
+.writeme{
+    background-color: var(--color8);
+    /**placeholder color **/
+    
+}
+.write{
+    position: flex;
+    justify-content: center;
+    margin-top: 50px;
+    /** fix this **/
+}
+
+input[type="submit"] {
+    display: block;
+    width: 40%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: transparent;
+    border-color: var(--color7);
+    min-width: 300px;
+    color: var(--color1);
+}
+input[type="submit"]:hover {
+    display: block;
+    width: 40%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    font-style: oblique;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: transparent;
+    border-color: var(--color6);
+    min-width: 300px;
+    color: var(--color5);
+  }
 @media (max-width: 1200px) {
     html {
       font-size: 55%;
@@ -155,5 +226,11 @@ a.contact-details:hover{
 @media (max-width: 460px) {
     html {
       font-size: 45%;
+    }
+    .writeme {
+        width: 80%;
+    }
+    .write {
+        width: 80%;
     }
   }
