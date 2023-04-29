@@ -295,9 +295,20 @@
     <section class="fourth-section" id="textwrite">
       <article>
         <div class="write">
-          <textarea id="writeme" class="writeme" name="write_me" cols="80" rows="10"
+          <!--<textarea id="writeme" class="writeme" name="write_me" cols="80" rows="10"
             placeholder="I would like to hear from you!"></textarea>
-          <input class="submitbutton" type="submit" name="submit" value="Send!" />
+          <input class="submitbutton" type="submit" name="submit" value="Send!" />-->
+          <form class="submitform" action="https://formsubmit.co/c.costache1@outlook.com" method="POST">
+            <input type="hidden" name="_subject" value="New Mail Boss!">
+            <input class="writeme" id="namefield" type="text" name="name" placeholder="Please Insert Your Name"
+              required>
+            <input class="writeme" id="emailfield" type="email" name="email"
+              placeholder="Please Insert Your Email Address" required>
+            <textarea class="writeme" id="textfield" type="text" name="text"
+              placeholder="I would like to hear from you!" cols="80" rows="10" required></textarea>
+            <input type="hidden" name="_next" value="C:\Lectii HTML\Git portfolio\portfoliopage\pages\thanks.html">
+            <button class="submitbutton" type="submit">Send</button>
+          </form>
         </div>
         <!-- button for text area here-->
       </article>
