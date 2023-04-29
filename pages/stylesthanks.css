@@ -1,0 +1,381 @@
+/* Please feel free to comment on this so i can learn! Thank you!!!*/
+:root {
+    /* Hier come new colors , I know it's a mess... */
+    --color1: rgba(255, 70, 70, 0.932);
+    --color2: salmon;
+    --color3: rgb(54, 54, 54);
+    --color4: blueviolet;
+    --color5: #12b4b6;
+    --color6: #2ebec6;
+    --color7: #008ca2;
+    --color8: #39d7f3;
+    --color9: #ff8281;
+    --color10: #e9edfc;
+    --color11: #bcd4f1;
+    --color12: #e3e3e3;
+    --color13: #b3b3b3;
+}
+
+.dark {
+    --color5: rgba(255, 70, 70, 0.932);
+    --color7: salmon;
+    --color3: rgb(54, 54, 54);
+    --color9: blueviolet;
+    --color1: #12b4b6;
+    --color6: #2ebec6;
+    --color2: #008ca2;
+    --color8: #39d7f3;
+    --color4: #ff8281;
+    --color10: #e9edfc;
+    --color11: #bcd4f1;
+    --color12: #e3e3e3;
+    --color13: #b3b3b3;
+}
+
+/*Light/Dark mode */
+:root {
+    --background: var(--color2);
+    --check: var(--color1);
+    --ball: var(--color3);
+}
+
+.dark {
+    --background: var(--color8);
+    --check: var(--color8);
+    --ball: var(--color4);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dark-mode {
+    display: flex;
+    width: 100%;
+    height: 0px;
+    justify-content: center;
+    align-items: center;
+    background: var(--background);
+    transition: .5s;
+}
+
+.checkbox:checked+.label .ball {
+    transform: translateX(15px);
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    width: 30px;
+    height: 14px;
+    background: var(--check);
+    border-radius: 30px;
+    padding: 8px;
+    position: relative;
+}
+
+.ball {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 12px;
+    height: 12px;
+    background: var(--ball);
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+}
+
+/*End Light/Dark Mode */
+
+#navigation-bar {
+    background-color: transparent;
+    border: 0.8px solid transparent;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 10;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    position: fixed;
+    width: 100%;
+}
+
+nav>ul {
+    display: flex;
+    align-items: baseline;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--color2)
+}
+
+.nav-list .nav-link {
+    display: block;
+    font-size: 1.4rem;
+    padding: 1.3rem;
+    transition: transform 0.3s ease-out;
+}
+
+.nav-list .nav-link:hover {
+    color: var(--color4);
+    background: transparent;
+    transform: translateY(8px);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.thankyou {
+    background-color: var(--color3);
+    display: flex;
+    flex-direction: column;
+    padding-top: 20vh;
+    padding-bottom: 55vh;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+body {
+    background-color: var(--color3);
+}
+
+h1 {
+    color: var(--color1);
+    font-size: 20px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: transform 0.3s ease-out;
+}
+
+
+h3 {
+    color: var(--color1);
+    font-size: 30px;
+    text-align: center;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+.third-section {
+    background-color: var(--color3);
+    display: flex;
+    margin-top: none;
+    padding-top: none;
+    padding-bottom: 75px;
+    justify-content: center;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+
+}
+
+.contact-details {
+    font-size: 2rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+    transform: translateY(8px);
+}
+
+a.contact-details {
+    color: var(--color4)
+}
+
+a.contact-details:hover {
+    color: var(--color2)
+}
+
+.project-title:hover {
+    color: var(--color4);
+}
+
+.project-title {
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
+}
+
+.footer {
+    color: var(--color1);
+    background-color: var(--color3);
+    border: 0.8px solid transparent;
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    z-index: 10;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.writeme {
+    background-color: silver;
+    /**placeholder color **/
+
+}
+
+.write {
+    position: flex;
+    justify-content: center;
+    margin-top: 50px;
+    /** fix this **/
+}
+
+.submitform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#namefield {
+    width: 450px;
+    border-radius: 5px;
+}
+
+#emailfield {
+    width: 450px;
+    border-radius: 5px;
+}
+
+#textfield {
+    width: 450px;
+    height: 250px;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 40%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: transparent;
+    border-color: var(--color3);
+    min-width: 300px;
+    color: var(--color4);
+}
+
+button[type="submit"]:hover {
+    display: block;
+    width: 40%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    font-style: oblique;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: transparent;
+    border-color: var(--color3);
+    min-width: 300px;
+    color: var(--color2);
+}
+
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 980px) {
+    html {
+        font-size: 50%;
+    }
+
+    .checkbox:checked+.label .ball {
+        transform: translateX(10px);
+    }
+
+    .checkbox {
+        opacity: 0;
+        position: absolute;
+    }
+
+    .label {
+        width: 24px;
+        height: 12px;
+        background: var(--check);
+        border-radius: 30px;
+        padding: 7px;
+        position: relative;
+    }
+
+    .ball {
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 10px;
+        height: 10px;
+        background: var(--ball);
+        border-radius: 50%;
+        transition: transform 0.2s linear;
+    }
+}
+
+@media (max-width: 460px) {
+    html {
+        font-size: 45%;
+    }
+
+    .writeme {
+        width: 80%;
+    }
+
+    .write {
+        width: 80%;
+    }
+
+    .checkbox:checked+.label .ball {
+        transform: translateX(8px);
+    }
+
+    .checkbox {
+        opacity: 0;
+        position: absolute;
+    }
+
+    .label {
+        width: 16px;
+        height: 8px;
+        background: var(--check);
+        border-radius: 30px;
+        padding: 2px;
+        position: relative;
+    }
+
+    .ball {
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 4px;
+        height: 4px;
+        background: var(--ball);
+        border-radius: 50%;
+        transition: transform 0.2s linear;
+    }
+}
